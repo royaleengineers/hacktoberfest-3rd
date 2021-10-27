@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/moin001"
+    tools:context=".FinanceActivity">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="167dp"
+        android:layout_height="167dp"
+        android:src="@drawable/ic_back_btn"
+        android:id="@+id/back_btn"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"/>
+
+    <TextView
+        android:id="@+id/room_name"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/back_btn"
+        android:fontFamily="sans-serif-light"
+        android:textColor="#fff"
+        android:textSize="50sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_18sdp"
+        android:layout_marginTop="@dimen/_400sdp"
+        android:text="SWITCHES"
+        android:fontFamily="@font/cabin_semibold"
+        android:textColor="#fff"
+        android:textSize="@dimen/_15ssp"/>
+
+
+    <!--        android:text="Bedroom"-->
+
+<!--    <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--        android:layout_width="167dp"-->
+<!--        android:layout_height="167dp"-->
+<!--        android:backgroundTint="#333333"-->
+<!--        android:src="@drawable/ic_done_btn"-->
+<!--        android:id="@+id/done_btn"-->
+<!--        app:borderWidth="3dp"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_marginStart="330dp"/>-->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/back_btn"
+        android:id="@+id/sub_items"/>
+
+
+<!--    <Button-->
+<!--        android:layout_width="100dp"-->
+<!--        android:layout_height="100dp"-->
+<!--        android:layout_below="@id/sub_items"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:background="@drawable/custom_room_item_shape"-->
+<!--        android:text="add item"/>-->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="550dp">
+
+                <TextView
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_320sdp"
+                    android:layout_marginStart="@dimen/_90sdp"
+                    android:text="INTENSITY CONTROL SAFETY"
+                    android:textColor="#fff"
+                    android:fontFamily="@font/cabin_semibold"
+                    />
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/boxed_vertical"
+                    android:layout_marginTop="@dimen/_370sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:id="@+id/regulatr_s"/>
+
+                <TextView
+                    android:id="@+id/sensor_dat"
+                    android:layout_width="@dimen/_130sdp"
+                    android:layout_height="@dimen/_60sdp"
+                    android:layout_marginStart="@dimen/_160sdp"
+                    android:layout_marginTop="@dimen/_285sdp"
+                    android:background="@drawable/custom_sensor_data_shape"
+                    android:fontFamily="@font/cabin_semibold"
+                    android:text="  3666"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/_40sdp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_160sdp"
+                    android:layout_marginTop="@dimen/_265sdp"
+                    android:text="SENSOR"
+                    android:textColor="#fff"
+                    android:fontFamily="@font/cabin_semibold"/>
+
+
+                <abak.tr.com.boxedverticalseekbar.BoxedVertical
+                    android:id="@+id/boxed_vertical"
+                    android:layout_width="70dp"
+                    android:layout_height="250dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="@dimen/_200sdp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_weight="1"
+                    app:backgroundColor="@color/color_background"
+                    app:cornerRadius="20dp"
+                    app:defaultValue="140"
+                    app:imageEnabled="false"
+                    app:max="300"
+                    app:progressColor="@color/color_progress"
+                    app:step="5"
+                    app:textBottomPadding="20"
+                    app:textColor="#FF0000"
+                    app:textEnabled="true"
+                    app:textSize="12sp"
+                    app:touchDisabled="true" />
+
+                <Button
+                    android:id="@+id/add_swtch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="440dp"
+                    android:layout_marginStart="@dimen/_164sdp"
+                    android:background="@drawable/add_switch"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:text="Add"
+                    android:textSize="90sp"
+                    android:textColor="#fff"
+                    android:fontFamily="@font/cabin_semibold"
+                    />
+
+
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:background="@drawable/custom_room_shape"
+                android:id="@+id/switch_recyclerview">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+</RelativeLayout>

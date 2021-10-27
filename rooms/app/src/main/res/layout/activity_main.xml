@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E1EBF1"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:src="@drawable/roomadd_btn"
+        android:backgroundTint="#FFEA00"
+        android:id="@+id/add_activity"/>
+
+    <Button
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginStart="20dp"
+        android:textColor="#2A3C9F"
+        android:drawableLeft="@drawable/bt_btn"
+        android:textSize="@dimen/_12sdp"
+        android:fontFamily="@font/cabin_medium"
+        android:id="@+id/bl_btn"/>
+
+    <TextView
+        android:layout_width="@dimen/_240sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginTop="@dimen/_80sdp"
+        android:layout_marginStart="10dp"
+        android:text="  Welcome Home,"
+        android:textSize="@dimen/_30sdp"
+        android:fontFamily="@font/cabin_medium"
+        android:id="@+id/wlcm_txt"/>
+
+    <TextView
+        android:layout_width="@dimen/_270sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_119sdp"
+        android:layout_marginStart="@dimen/_25sdp"
+        android:text="Prajesh De"
+        android:textSize="@dimen/_23sdp"
+        android:fontFamily="@font/cabin_semibold"
+        android:textColor="#2962FF"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginStart="@dimen/_235sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:src="@mipmap/ic_launcher"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="470dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="350dp"
+                    android:layout_height="240dp"
+                    android:layout_marginStart="@dimen/_17sdp"
+                    android:layout_marginTop="@dimen/_170sdp"
+                    android:background="@drawable/custom_room_item_shape">
+
+                    <com.anychart.AnyChartView
+                        android:id="@+id/daily_graph"
+                        android:layout_width="@dimen/_250sdp"
+                        android:layout_height="@dimen/_160sdp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginTop="20dp"
+                        />
+                    <ProgressBar
+                        android:id="@+id/progress_bar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_110sdp"
+                        android:layout_marginTop="@dimen/_70sdp"
+                        />
+
+
+                </androidx.cardview.widget.CardView>
+
+
+
+
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_350sdp"
+                android:background="@drawable/room_relative"
+                android:id="@+id/item_recyclerview">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

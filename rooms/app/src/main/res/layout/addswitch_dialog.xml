@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:style="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#FFAB00">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name a device :)"
+        android:textSize="48sp"
+        android:textColor="#3C2D29"
+        android:fontFamily="@font/cabin_medium"
+        android:layout_margin="15dp" />
+    <!--        android:fontFamily="@font/amiko"-->
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:id="@+id/sname"
+        android:hint="Name of switch"
+        android:fontFamily="@font/cabin_medium"
+        android:textColor="#000"
+        android:layout_marginLeft="15dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:text="On/Off port"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:fontFamily="@font/cabin_medium"/>
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:id="@+id/onport"
+        android:hint="On port"
+        android:textColor="#000"
+        android:fontFamily="@font/cabin_medium"
+        android:layout_marginLeft="@dimen/_15sdp"/>
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:id="@+id/offport"
+        android:hint="Off port"
+        android:textColor="#000"
+        android:fontFamily="@font/cabin_medium"
+        android:layout_marginLeft="@dimen/_15sdp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Done"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:id="@+id/set_sbutton"
+        android:textColor="#D50000"
+        android:textSize="40sp"
+        android:fontFamily="@font/cabin_medium"
+        android:layout_marginLeft="10dp"/>
+    <!--        android:fontFamily="@font/amiko"-->
+
+
+
+</LinearLayout>

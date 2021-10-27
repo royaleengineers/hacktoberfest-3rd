@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">rooms</string>
+    <string name="dis_en">Discovery enabled</string>
+    <string name="dis_dis">Discoverability Disabled. Able to receive connections</string>
+    <string name="dis_disn">Discoverability Disabled. Not able to receive connections</string>
+    <string name="conn">Connecting....</string>
+    <string name="connd">Connected</string>
+
+</resources>
