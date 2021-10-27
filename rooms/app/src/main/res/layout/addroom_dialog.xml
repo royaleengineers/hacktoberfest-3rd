@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:style="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#0882DF">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Room Name :)"
+        android:textSize="48sp"
+        android:textColor="#FFD600"
+        android:fontFamily="@font/cabin_medium"
+        android:layout_margin="15dp" />
+<!--        android:fontFamily="@font/amiko"-->
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:id="@+id/name"
+        android:backgroundTint="#fff"
+        android:fontFamily="@font/cabin_medium"
+        android:textColor="#fff"
+        android:layout_marginLeft="15dp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Done"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:id="@+id/set_button"
+        android:textColor="#fff"
+        android:textSize="40sp"
+        android:fontFamily="@font/cabin_medium"
+        android:layout_marginLeft="10dp"/>
+
+<!--    <androidx.core.widget.NestedScrollView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="500dp">-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:orientation="vertical">-->
+<!--            <Button-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Done"-->
+<!--                style="@style/Widget.MaterialComponents.Button.TextButton"-->
+<!--                android:id="@+id/set_button1"-->
+<!--                android:textColor="#fff"-->
+<!--                android:textSize="40sp"-->
+<!--                android:fontFamily="@font/cabin_medium"-->
+<!--                android:layout_marginLeft="10dp"/>-->
+
+<!--            <Button-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Done"-->
+<!--                style="@style/Widget.MaterialComponents.Button.TextButton"-->
+<!--                android:id="@+id/set_button2"-->
+<!--                android:textColor="#fff"-->
+<!--                android:textSize="40sp"-->
+<!--                android:fontFamily="@font/cabin_medium"-->
+<!--                android:layout_marginLeft="10dp"/>-->
+
+<!--            <Button-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Done"-->
+<!--                style="@style/Widget.MaterialComponents.Button.TextButton"-->
+<!--                android:id="@+id/set_button3"-->
+<!--                android:textColor="#fff"-->
+<!--                android:textSize="40sp"-->
+<!--                android:fontFamily="@font/cabin_medium"-->
+<!--                android:layout_marginLeft="10dp"/>-->
+
+<!--            <Button-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Done"-->
+<!--                style="@style/Widget.MaterialComponents.Button.TextButton"-->
+<!--                android:id="@+id/set_button4"-->
+<!--                android:textColor="#fff"-->
+<!--                android:textSize="40sp"-->
+<!--                android:fontFamily="@font/cabin_medium"-->
+<!--                android:layout_marginLeft="10dp"/>-->
+
+<!--            <Button-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Done"-->
+<!--                style="@style/Widget.MaterialComponents.Button.TextButton"-->
+<!--                android:id="@+id/set_button5"-->
+<!--                android:textColor="#fff"-->
+<!--                android:textSize="40sp"-->
+<!--                android:fontFamily="@font/cabin_medium"-->
+<!--                android:layout_marginLeft="10dp"/>-->
+
+<!--            <Button-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Done"-->
+<!--                style="@style/Widget.MaterialComponents.Button.TextButton"-->
+<!--                android:id="@+id/set_button6"-->
+<!--                android:textColor="#fff"-->
+<!--                android:textSize="40sp"-->
+<!--                android:fontFamily="@font/cabin_medium"-->
+<!--                android:layout_marginLeft="10dp"/>-->
+
+<!--            <Button-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Done"-->
+<!--                style="@style/Widget.MaterialComponents.Button.TextButton"-->
+<!--                android:id="@+id/set_button7"-->
+<!--                android:textColor="#fff"-->
+<!--                android:textSize="40sp"-->
+<!--                android:fontFamily="@font/cabin_medium"-->
+<!--                android:layout_marginLeft="10dp"/>-->
+
+<!--            <Button-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Done"-->
+<!--                style="@style/Widget.MaterialComponents.Button.TextButton"-->
+<!--                android:id="@+id/set_button8"-->
+<!--                android:textColor="#fff"-->
+<!--                android:textSize="40sp"-->
+<!--                android:fontFamily="@font/cabin_medium"-->
+<!--                android:layout_marginLeft="10dp"/>-->
+
+<!--            <Button-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Done"-->
+<!--                style="@style/Widget.MaterialComponents.Button.TextButton"-->
+<!--                android:id="@+id/set_button9"-->
+<!--                android:textColor="#fff"-->
+<!--                android:textSize="40sp"-->
+<!--                android:fontFamily="@font/cabin_medium"-->
+<!--                android:layout_marginLeft="10dp"/>-->
+
+<!--            <Button-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Done"-->
+<!--                style="@style/Widget.MaterialComponents.Button.TextButton"-->
+<!--                android:id="@+id/set_button10"-->
+<!--                android:textColor="#fff"-->
+<!--                android:textSize="40sp"-->
+<!--                android:fontFamily="@font/cabin_medium"-->
+<!--                android:layout_marginLeft="10dp"/>-->
+
+<!--        </LinearLayout>-->
+
+<!--    </androidx.core.widget.NestedScrollView>-->
+
+
+
+
+<!--        android:fontFamily="@font/amiko"-->
+
+
+
+</LinearLayout>

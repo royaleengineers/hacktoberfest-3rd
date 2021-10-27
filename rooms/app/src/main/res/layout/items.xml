@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/_6sdp"
+    android:layout_marginTop="@dimen/_12sdp"
+    android:layout_marginEnd="@dimen/_6sdp"
+    android:orientation="vertical"
+    android:background="@drawable/custom_room_item_shape"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/room_name"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:textColor="#000"
+        android:fontFamily="@font/cabin_medium"
+        android:textSize="@dimen/_13ssp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/date_time"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:layout_marginBottom="@dimen/_4sdp"
+        android:textColor="#000000"
+        android:fontFamily="@font/cabin_medium"
+        android:textSize="@dimen/_20ssp"/>
+
+</LinearLayout>
